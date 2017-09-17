@@ -1,0 +1,527 @@
+<html>
+<head>
+<title>Owned By lCyMasl_MasTer</title>
+
+<br/>
+<META NAME="description" CONTENT="Owned By lCyMasl_MasTer">
+<META NAME="keywords" CONTENT="Owned By lCyMasl_MasTer">
+<META NAME="robot" CONTENT="index,follow">
+<META NAME="copyright" CONTENT="Owned By lCyMasl_MasTer">
+<META NAME="author" CONTENT="Owned By lCyMasl_MasTer">
+<META NAME="language" CONTENT="English">
+<META NAME="revisit-after" CONTENT="1">
+<link href='http://i50.tinypic.com/j93j93.gif' rel='SHORTCUT ICON'/>
+<link rel="shortcut icon" href="image/icon.jpg"/>
+
+<link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+<meta name="Description" content="Owned By lCyMasl_MasTer">
+<script language="JavaScript">
+ 
+function tb5_makeArray(n){
+ this.length = n;
+ return this.length;
+}
+ 
+tb5_messages = new tb5_makeArray(7);
+tb5_messages[0] = "Owned By lCyMasl_MasTer";
+tb5_messages[1] = "Owned By lCyMasl_MasTer";
+tb5_messages[2] = "Owned By lCyMasl_MasTer";
+tb5_messages[3] = "Owned By lCyMasl_MasTer";
+tb5_messages[4] = "Owned By lCyMasl_MasTer";
+tb5_messages[5] = "Owned By lCyMasl_MasTer";
+tb5_messages[6] = "Owned By lCyMasl_MasTer";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 20;
+tb5_speed = 30;
+tb5_delay = 2000;
+var tb5_counter=2;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){
+ k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+ temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){
+ if (tb5_currMsg == tb5_messages.length-1){
+ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+ clearTimeout(tb5_timerID);
+ return;
+ }
+ tb5_counter++;
+ tb5_currMsg=0;
+ }
+ else{
+ tb5_currMsg++;
+ }
+ n=0;
+ tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+ }
+ tb5_arr = tb5_shuffle(tb5_arr);
+ tb5_sp=tb5_delay;
+}
+else{
+ tb5_sp=tb5_speed;
+ k = tb5_arr[n];
+ tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+ tb5_stsmsg = "";
+ for (var i=0; i<tb5_sts.length; i++)
+ tb5_stsmsg += tb5_sts[i];
+ document.title = tb5_stsmsg;
+ n++;
+ }
+ tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){
+ tb5_init(0);
+}
+tb5_randomizetitle();
+</script>
+<script language="javascript">
+var text='Owned By lCyMasl_MasTer';
+var delay=5;
+var Xoff=0;
+var Yoff=-30;
+var txtw=10;
+var beghtml='<font face="Agency FB" color="#FFFFFF" style="" size="4em"><b>';
+var endhtml='</b></font>';
+ns4 = (navigator.appName.indexOf("Netscape")>=0 && document.layers)? true: false;
+ie4 = (document.all && !document.getElementById)? true : false;
+ie5 = (document.all && document.getElementById)? true : false;
+ns6 = (document.getElementById && navigator.appName.indexOf("Netscape")>=0 )? true: false;
+var txtA=new Array();
+text=text.split(');
+var x1=0;
+var y1=-50;
+var t=';
+for(i=1;i<=text.length;i++){
+t+=(ns4)? '<layer left="0" top="-100" width="'+txtw+'" name="txt'+i+'" height="1">' : '<div id="txt'+i+'" style="position:absolute; top:-100px; left:0px; height:1px; width:'+txtw+'; visibility:visible;">';
+t+=beghtml+text[i-1]+endhtml;
+t+=(ns4)? '</layer>' : '</div>';
+}
+document.write(t);
+function moveid(id,x,y){
+if(ns4)id.moveTo(x,y);
+else{
+id.style.left=x+'px';
+id.style.top=y+'px';
+}}
+function animate(evt){
+x1=Xoff+((ie4||ie5)?event.clientX+document.body.scrollLeft:evt.pageX);
+y1=Yoff+((ie4||ie5)?event.clientY+document.body.scrollTop:evt.pageY);
+}
+function getidleft(id){
+if(ns4)return id.left;
+else return parseInt(id.style.left);
+}
+function getidtop(id){
+if(ns4)return id.top;
+else return parseInt(id.style.top);
+}
+function getwindowwidth(){
+if(ie4||ie5)return document.body.clientWidth+document.body.scrollLeft;
+else return window.innerWidth+pageXOffset;
+}
+function movetxts(){
+for(i=text.length;i>1;i=i-1){
+if(getidleft(txtA[i-1])+txtw*2>=getwindowwidth()){
+moveid(txtA[i-1],0,-100);
+moveid(txtA[i],0,-100);
+}else moveid(txtA[i], getidleft(txtA[i-1])+txtw, getidtop(txtA[i-1]));
+}
+moveid(txtA[1],x1,y1);
+}
+window.onload=function(){
+for(i=1;i<=text.length;i++)txtA[i]=(ns4)?document.layers['txt'+i]:(ie4)?document.all['txt'+i]:document.getElementById('txt'+i);
+if(ns4)document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove=animate;
+setInterval('movetxts()',delay);
+}
+</script>
+
+<style>.kotak{text-align:center;background:#000; border:solid red 2px; position:fixed;top:0 ;left:390px;left:1px;right:1px;}
+.kotak1{ background:#000000; text-align:center;border:solid red 2px; position:fixed;bottom:0 ;left:1px;right:1px;}
+</style>
+<SCRIPT type="text/javascript">if (typeof document.onselectstart!="undefined") {document.onselectstart=new Function ("return false");}else{document.onmousedown=new Function ("return false");document.onmouseup=new Function ("return true");}</SCRIPT>
+<body oncontextmenu='return false;' onkeydown='return false;'omousedown='return false;' style="background:#000 url(http://1.bp.blogspot.com/-vK6eihg98as/UoZLRM-h49I/AAAAAAAAAC8/AQWolEtT4Es/s1600/blackmatrix.gif) repeat fixed top center; color:#fff; text-shadow: 0px 0px 10px #ff0000; font-family:Verdana, Arial, sans-serif; margin-left:auto; margin-right:auto; width: 100%; height=auto; text-align:center; align="center">
+<script type="text/javascript">
+(function(){
+  var global = this;
+  var globalName = 'starField';
+  var numberOfStars = 100;
+
+  /* total depth of space ;)*/
+  var depthDimentsion = 2000;
+
+  /* % of space between browser and viewer.*/
+  var viewingDepth = 0.0001;
+
+  /* % of space moved in one step.*/
+  var forwardVelocity = 0.3;
+  var d = depthDimentsion*(viewingDepth/100);
+  var planeDepth = depthDimentsion - d;
+  var fv = planeDepth*(forwardVelocity/100);
+  var zMultiplier = (depthDimentsion)/d;
+  var starObjs, starHTML;
+  var posMod, sy, sx, windowCenterY, windowCenterX;
+  var scaleXAdjust, scaleYAdjust;
+  if((document.layers)&&(this.Layer)){
+    starHTML = [
+    '<layer id="stars','',
+    '" left="0" top="0" width="1" height="1"',
+    ' bgColor="#FFFFFF"></layer>'];
+  }else{
+    starHTML = [
+    '<div id="stars','',
+    '" style="position:absolute;width:1px;overflow:',
+    'hidden;height:1px;background-color:#FFF;',
+    'font-size:1px"></div>'];
+  }
+  function compatModeTest(obj){
+    if((document.compatMode)&&
+       (document.compatMode.indexOf('CSS') != -1)&&
+       (document.documentElement)){
+      return document.documentElement;
+    }else if(document.body){
+      return document.body;
+    }else{
+      return obj;
+    }
+  }
+  function getWindowState(){
+    var global = this;
+    var readScroll = {scrollLeft:NaN,scrollTop:NaN};
+    var readSizeC = {clientWidth:NaN,clientHeight:NaN};
+    var readSizeI = {innerWidth:NaN,innerHeight:NaN};
+    var readScrollX = 'scrollLeft';
+    var readScrollY = 'scrollTop';
+    function getWidthI(){return readSizeI.innerWidth;}
+    function getWidthC(){return readSizeC.clientWidth|0;}
+    function getHeightI(){return readSizeI.innerHeight;}
+    function getHeightC(){return readSizeC.clientHeight|0;}
+    function getHeightSmart(){
+        return retSmaller(getHeightI(), getHeightC());
+    }
+    function getWidthSmart(){
+        return retSmaller(getWidthI(), getWidthC());
+    }
+    function setInnerWH(){
+      theOne.getWidth = getWidthI;
+      theOne.getHeight = getHeightI;
+    }
+    function retSmaller(inr, other){
+      if(other > inr){
+        setInnerWH();
+        return inr;
+      }else{
+        return other;
+      }
+    }
+    var theOne = {
+      getScrollX:function(){return readScroll[readScrollX]|0;},
+      getScrollY:function(){return readScroll[readScrollY]|0;},
+      getWidth:getWidthC,
+      getHeight:getHeightC
+    };
+    function main(){return theOne;}
+    function rankObj(testObj){
+      var dv,dhN;
+      if(testObj&&(typeof testObj.clientWidth == 'number')&&
+         (typeof testObj.clientHeight == 'number')){
+        if(((dv = global.innerHeight - testObj.clientHeight) >= 0)&&
+           ((dh = global.innerWidth - testObj.clientWidth) >= 0)){
+          if(dh == dv){
+            return 0;
+          }else if((dh&&!dv)||(dv&&!dh)){
+            return (dh+dv);
+          }
+        }
+      }
+      return NaN;
+    }
+    if((typeof global.innerHeight == 'number')&&
+       (typeof global.innerWidth == 'number')){
+      readSizeI = global;
+      var bodyRank = rankObj(document.body);
+      var rankDocEl = rankObj(document.documentElement);
+      var selEl = null;
+      if(!isNaN(bodyRank)){
+        if(!isNaN(rankDocEl)){
+          if(bodyRank < rankDocEl){
+            selEl = document.body;
+          }else if(bodyRank > rankDocEl){
+            selEl = document.documentElement;
+          }else{
+            selEl = compatModeTest(document.body);
+          }
+        }else{
+          selEl = document.body;
+        }
+      }else if(!isNaN(rankDocEl)){
+        selEl = document.documentElement;
+      }
+      if(selEl){
+        readSizeC = selEl
+        theOne.getWidth = getWidthSmart;
+        theOne.getHeight = getHeightSmart;
+      }else{
+        setInnerWH();
+      }
+    }else{
+      readSizeC = compatModeTest(readSizeC);
+    }
+    if((typeof global.pageYOffset == 'number')&&
+       (typeof global.pageXOffset == 'number')){
+      readScroll = global;
+      readScrollY = 'pageYOffset';
+      readScrollX = 'pageXOffset';
+    }else{
+      readScroll = compatModeTest(readScroll);
+    }
+    return (getWindowState = main)();
+  }
+  var windowState = getWindowState();
+  function readWindow(){
+    scaleYAdjust = (((windowCenterY =
+            (windowState.getHeight() >>1)) - 16)*
+                         zMultiplier);
+    scaleXAdjust = (((windowCenterX =
+            (windowState.getWidth() >> 1)) - 16)*
+                        zMultiplier);
+    sy = windowCenterY + windowState.getScrollY();
+    sx = windowCenterX + windowState.getScrollX();
+  }
+  function getStyleObj(id){
+    var obj = null;
+    if(document.getElementById){
+      obj = document.getElementById(id);
+    }else if(document.all){
+      obj = document.all[id];
+    }else if(document.layers){
+      obj = document.layers[id];
+    }
+    return ((typeof obj != 'undefined')&&
+        (typeof obj.style != 'undefined'))?
+                    obj.style:obj;
+  }
+  function starObj(id, parent, prv){
+    var next,reset;
+    var divClip, div = getStyleObj("stars"+id);
+    var y,x,z,v,dx,dy,dm,dm2,px,py,widthPos,temp;
+    (reset = function(){
+      px = Math.random()<0.5 ? +1 : -1;
+      py = Math.random()<0.5 ? +1 : -1;
+      y = ((Math.random()*Math.random()*
+          scaleYAdjust)+windowCenterY);
+      x = ((Math.random()*Math.random()*
+          scaleXAdjust)+windowCenterX);
+      widthPos = (x + zMultiplier);
+      z = 0;
+    })();
+    z = Math.random()*planeDepth*0.8;
+    function step(){
+      temp = x * (v = d/(depthDimentsion - z));
+      dm = ((dm2 = ((widthPos * v)-temp)|0)>>1);
+      dy = (y * v);
+      dx = (temp);
+    }
+    if(div){
+      if(!posMod){
+        posMod = (typeof div.top == 'string')?'px':0;
+      }
+      divClip =  ((typeof div.clip != 'undefined')&&
+               (typeof div.clip != 'string'))?
+                       div.clip:div;
+      this.position = function(){
+        step();
+        if(((z += fv) >= planeDepth)||
+           ((dy+dm) > windowCenterY)||
+          ((dx+dm) > windowCenterX)){
+          reset();
+          step();
+          dm = 0;
+        }
+        div.top = ((sy+(py*dy)-dm)|0)+posMod;
+        div.left = ((sx+(px*dx)-dm)|0)+posMod;
+        divClip.width = (divClip.height = dm2+posMod);
+        next.position();
+      };
+    }else{
+      this.position = function(){return;};
+    }
+    if(++id < numberOfStars){
+      next = new starObj(id, parent)
+    }else{
+      next = parent
+    }
+  }
+  function init(){
+    if(!getStyleObj("stars"+(numberOfStars-1))){
+      setTimeout(starField, 200);
+    }else{
+      readWindow();
+      starObjs = new starObj(0, init);
+      init.act();
+    }
+  };
+  init.position = function(){return;}
+  init.act = function(){
+    readWindow();
+    starObjs.position();
+    setTimeout(init.act,50);
+  };
+  init.act.toString = function(){
+    return globalName+'.act()';
+  };
+  init.toString = function(){
+    while(global[globalName])globalName += globalName;
+    global[globalName] = this;
+    return globalName+'()';
+  };
+  for(var c = numberOfStars;c--;){
+    starHTML[1] = c;
+    document.write(starHTML.join(''));
+  }
+  setTimeout(init, 200);
+})();
+</script>
+<div align="center"><br/><br/><br/>
+
+<center>
+<img style="-webkit-user-select: none" src="http://images.cooltext.com/3910321.png"/>
+</center>
+<center><font style="color:white;font size:8px;text-align: center;font-family:Pirata One;text-shadow: 0 0 3px #00FFFF, 0px 0px 5px #00FFFF,0 0 5px #00FFFF,0 0 5px #00FFFF;"><font size="10" font-family="Pirata One" color="white"> By </font></p>
+
+<center><span style="font-size:95px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;font-family:nova square;color:black;"> lCyMasl_MasTer </center>
+<br>
+
+<center>
+<img style="-webkit-user-select: none" src="image/corp.jpg" onmouseover="this.style.opacity=1;this.filters.alpha.opacity=100"
+onmouseout="this.style.opacity=0.4;this.filters.alpha.opacity=40" />
+</center>
+
+<center><embed width="1000" height="50" align="middle" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent" quality="high" src="http://www.widgeo.net/effets/2.swf" flashvars="letter= Hello Everyone "></center>
+
+<center><font style="color:white;font size:50px;text-align: size:50px center;font-family:Pirata One;text-shadow: 0 0 50px #00FFFF, 50px 50px 50px #00FFFF,0 0 50px #00FFFF,0 0 50px #00FFFF;"><font size="50" font-family="Pirata One" color="black"<B>lCyMasl_MasTer Was Here! </font></p>
+
+</center>
+&nbsp;<center>
+<style type="text/css"> <!-- .style2 {font-size: small} .style4 {color: #FF0000; font-weight: bold; } .style5 {color: #FFFFFF} .style8 {color: #FFFFFF; font-weight: bold; } .style10 {color: #FF0000} --> </style> <body bgcolor="#000000"> <div align="center"> </span></font></b><font color="#008000">
+<style>
+body {
+background: #000;
+font-family: "Arial", Verdana, sans-serif;
+}
+h1 {
+color: #333;
+font-size: 40px;
+margin: 1px auto;
+text-align:center;
+text-transform:uppercase;
+}
+.neon {
+color: #FFFFFF;
+text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 45px #FF0000, 0 0 40px #FF0000;
+}
+<script language="JavaScript1.2">
+function ClearError() {return true;}
+window.onerror = ClearError;
+</script>
+
+
+</style>&nbsp;<script>
+window.onload = function() {
+var h1 = document.getElementsByTagName("h1")[0],
+text = h1.innerText || h1.textContent,
+split = [], i, lit = 0, timer = null;
+for(i = 0; i < text.length; ++i) {
+split.push("<span>" + text[i] + "</span>");
+}
+h1.innerHTML = split.join("");
+split = h1.childNodes;
+
+var flicker = function() {
+lit += 0.01;
+if(lit >= 1) {
+clearInterval(timer);
+}
+for(i = 0; i < split.length; ++i) {
+if(Math.random() < lit) {
+split[i].className = "neon";
+} else {
+split[i].className = "";
+}
+}
+}
+setInterval(flicker, 100);
+}
+</script></font>
+
+<h1>-~=|[Remember-Remember the 5th of november, The gunpowder treason and plot]|=~-</h1>
+<br>
+
+
+
+<center><span style="font-size:30px;text-shadow: 0 0 5px #e9e9e9;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;font-family:chiller;color:white;">
+ Contact Me : </center>
+<br>
+<center><span style="font-size:30px;text-shadow: 0 0 5px #e9e9e9;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;font-family:chiller;color:white;">
+ Contact Email : cymas404@gmail.com or cymas404@yahoo.com </center>
+<br>
+<center>
+<a href="http://www.facebook.com/profile.php?id=100002082247272" target="_blank"><img src="http://wm.schoolofdragons.com/SoD/Css/en-us/Default/Images/social-Facebook.png?v=052213"/"></a>
+<a href="http://www.twitter.com/Dimas_Noeris" target="_blank"><img src="http://wm.schoolofdragons.com/SoD/Css/en-us/Default/Images/social-Twitter.png?v=052213"/"></a>
+<a href="https://plus.google.com/118042911665959807962/" target="_blank"><img src="http://wm.schoolofdragons.com/SoD/Css/en-us/Default/Images/social-GooglePlus.png?v=052213"/"></a></center></span><br>
+</center>
+
+ <center><font color="Red" face="colonna MT" size="5"><B><b>Attention!</b> 
+<br>
+
+ <center><font color="white" face="colonna MT" size="5"><B><b>Please click on the image to contact me ^_^</b> 
+<br>
+
+ <center><font color="Red" face="colonna MT" size="5"><i><b>Thanks To : </b></i><marquee direction="left" behavior="alternate" scrollamount="2" scrolldelay="20" width="30%"><font color="white" face="chiller" size="5"><b> lCyMasl_MasTer | CyMas404 | samid404 | CyMas&trade;_Corp </b></font></marquee><br><br>
+<br>
+<embed src="image/2.mp3" width="0" height="0" allowfullscreen="true" allowscriptaccess="always"></embed>
+<embed src="image/1.mp3" width="0" height="0" allowfullscreen="true" allowscriptaccess="always"></embed>
+<br>
+
+<br>
+
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur815.ani), url(http://cur.cursors-4u.net/cursors/cur-9/cur815.png), progress;}</style><a href="http://www.cursors-4u.com/cursor/2011/03/29/the-alien-15.html" target="_blank" title="The Alien"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="The Alien" style="position:absolute; top: 0px; right: 0px;" /></a>
+</SCRIPT>
+<div class='widget-content'>
+<td align="left"><style type="text/css">#info-teja {z-index: 1000;background:-moz-linear-gradient(top,  #1F2326,  #555);background: -webkit-gradient(linear, left top, left bottom, from(#1F2326), to(#555));box-shadow:-2px -2px 8px #FF0000, 2px 2px 20px #FFFFFF;-moz-box-shadow:-2px -2px 8px #FFFFFF, 2px 2px 20px #FFFFFF;-webkit-box-shadow:-2px -2px 8px #FFFFFF, 2px 2px 20px #FFFFFF;width:460px;position: fixed;top:150px;left:0;margin-left:-350px;border:1px solid #444;background-position:top right no-repeat;height:35px;font:11px Arial;color:#eee;border-top-right-radius:8px;border-bottom-right-radius:8px;-moz-border-radius-topright:8px;-moz-border-radius-bottomright:8px g=æbkit-border-top-right-radius:8px;-webkit-border-bottom-right-radius:8px;}#info-teja{-o-transition: all 1s ease-in;-moz-transition: all 1s ease-in;-webkit-transition: all 1s ease-in;} #info-teja:hover{width:400px;opacity:1.0;margin-left:0;}.Tejainbox {border:1px solid #444;width:320px; margin:0px 90px 10px 10px;background:#ffffff;color:#ffffff; border-radius :20px; padding:5px 0;-moz-border-radius:20px; -webkit-border-radius:20px;-o-transition:all 2s ease-in;-moz-transition:all 2s ease-in;-webkit-transition:all 2s ease-in;opacity:0.2;}.Tejainbox:hover{opacity:1.0;box-shadow:1px 1px 15px #ff0000; -moz-box-shadow: 1px 1px 15px #FFF; -webkit-box-shadow: 1px 1px 15px #FFF;background: #ffffff;}.Tejainbox2 {margin:5px 10px;padding:0px 8px 10px;color:#FFFFFF;overflow:hidden;height:420px;}.teja15 {border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;}.Teja2 ul.bom {margin: 0; padding: 0;}.Tejainbox2 li {margin-left:20px;}.Tejainbox2 li a {color: #ffffff; line-height: 4px; font-size: 11px;font-weight: bold; text-decoration:none;}.Tejainbox2 li a:hover {color: red;text-shadow: 0 1px 1px #000;}.Tejainbox2 h2 { font: 18px Droid Serif;font-weight:bold;padding:0 8px;color: #ff0000;text-shadow: 0px 1px 1px #ddd;border-bottom: 1px solid #fffff;}.Tejatouch {font-size:21px;font-weight:bold;font-family:Arial Narrow;float:right;margin: 3px 10px 0 0;-o-transition: all 0.5s ease-out;-moz-transition: all 0.5s ease-out;-webkit-transition: all 0.5s ease-out;text-decoration:blink;}.Tejatouch:hover{-o-transform: scale(2) rotate(720deg) translate(0px);-moz-transform: scale(2) rotate(720deg) translate(0px);-webkit-transform: scale(2) rotate(720deg) translate(0px);color: #000000;}</style><div id="info-teja"><span class="Tejatouch">Message! </span><div class="Tejainbox"><div class="Tejainbox2 teja15">
+<h2> lCyMasl_MasTer </h2>
+ 
+<center><img height="100px" src="image/icon.jpg" width="150px" /> </center>
+ 
+  <span class="style4"><center><FONT COLOR="red"> Message : </center></FONT></span><br>
+
+<span class="style4"> <center>Knowledge is FREE</center></span><br>
+<span class="style4"> <center>We Are Anonymous</center></span><br>
+<span class="style4"> <center>We Are Family</center></span><br>
+<span class="style4"> <center>We Are Legion</center></span><br>
+<span class="style4"> <center>We Are Not A Group</center></span><br>
+<span class="style4"> <center>We Do Not Forgive</center></span><br>
+<span class="style4"> <center>We Do Not Forget</center></span><br>
+<span class="style4"> <center>Expect Us!</center></span><br>
+<span class="style4"> <center>And I'm Not One Of Them!</center></span><br>
+
